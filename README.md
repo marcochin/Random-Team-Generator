@@ -1,5 +1,5 @@
 # Random-Team-Generator
-[Click Me to View App in Google Play](https://play.google.com/store/apps/details?id=com.marcochin.teamrandomizer)
+[Click Me to View Random Team Generator in the Google Play Store](https://play.google.com/store/apps/details?id=com.marcochin.teamrandomizer)
 
 A quick little tool for games, parties, and other social gatherings for people who want to randomize their teams quickly and efficiently. Simple as that!
 
