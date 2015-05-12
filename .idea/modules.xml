@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TeamRandomizer.iml" filepath="$PROJECT_DIR$/TeamRandomizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomTeamGenerator.iml" filepath="$PROJECT_DIR$/RandomTeamGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
-

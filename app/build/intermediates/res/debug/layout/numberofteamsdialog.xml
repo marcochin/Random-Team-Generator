@@ -43,4 +43,4 @@
             android:textSize="@dimen/rtg_text_size"/>
     </LinearLayout>
 
-</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/numberofteamsdialog.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/RandomTeamGenerator/app/src/main/res/layout/numberofteamsdialog.xml -->

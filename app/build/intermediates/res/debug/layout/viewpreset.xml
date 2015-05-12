@@ -122,4 +122,4 @@
         ads:adSize="SMART_BANNER"
         ads:adUnitId="@string/admob_unit_id" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/viewpreset.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/RandomTeamGenerator/app/src/main/res/layout/viewpreset.xml -->

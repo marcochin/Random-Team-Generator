@@ -27,4 +27,4 @@
         android:text="@string/yes"
         android:textSize="@dimen/rtg_text_size"/>
 </LinearLayout>
-<!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/deletecurrentpresetdialog.xml -->
+<!-- From: file:/C:/Users/Marco/AndroidStudioProjects/RandomTeamGenerator/app/src/main/res/layout/deletecurrentpresetdialog.xml -->

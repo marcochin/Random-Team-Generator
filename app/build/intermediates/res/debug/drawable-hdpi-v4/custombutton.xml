@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/teamrandbuttonpressed" android:state_focused="true"></item>
     <item android:drawable="@drawable/teamrandbuttonreg"></item>
 
-</selector><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/drawable-hdpi/custombutton.xml -->
+</selector><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/RandomTeamGenerator/app/src/main/res/drawable-hdpi/custombutton.xml -->
