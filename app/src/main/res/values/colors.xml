@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rtg_accent_color">#33B5E5</color>
+    <color name="rtg_accent_color_dark">#2890b7</color>
+</resources>

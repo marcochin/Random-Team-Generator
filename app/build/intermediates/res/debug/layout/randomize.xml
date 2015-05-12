@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvRandomizeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/randomize_header"
+        android:textSize="@dimen/rtg_header_text_size" />
+
+    <TextView
+        android:id="@+id/tvRandomizePresetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvRandomizeHeader"
+        android:layout_marginLeft="5dp"
+        android:text="@string/current_preset"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvRandomizeCurrentPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRandomizeHeader"
+        android:layout_toLeftOf="@+id/tvRandomizeTotalLabel"
+        android:layout_toRightOf="@+id/tvRandomizePresetLabel"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/none"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvRandomizeTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRandomizeHeader"
+        android:layout_toLeftOf="@+id/tvRandomizeTotalPlayers"
+        android:text="@string/total_players"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvRandomizeTotalPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvRandomizeHeader"
+        android:layout_marginRight="5dp"
+        android:text="0"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <View
+        android:id="@+id/vRandomizeHorizontalDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvRandomizeCurrentPreset"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_divider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vRandomizeHorizontalDivider"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llTeamLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llTeamRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/llRandomizeAgain"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/llRandomizeAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avRandomizeAd"
+        android:layout_marginBottom="@dimen/rtg_button_margin_bottom"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.68" />
+
+        <Button
+            android:id="@+id/bRandomizeAgain"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.74"
+            android:background="@drawable/custombutton"
+            android:text="@string/randomize_again"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/rtg_button_text_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.68" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/avRandomizeAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_unit_id" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/randomize.xml -->

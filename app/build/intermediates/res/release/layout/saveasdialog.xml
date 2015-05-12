@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/etSavePreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter Preset Name... 1-26 char"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSavePreset"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bCancelSave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="@dimen/rtg_text_size"/>
+
+        <Button
+            android:id="@+id/bSavePresetAs"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="@dimen/rtg_text_size"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/saveasdialog.xml -->

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvDelNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/delNameHeader"
+        android:textSize="@dimen/rtg_header_text_size" />
+
+    <TextView
+        android:id="@+id/tvDelNamePresetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_marginLeft="5dp"
+        android:text="@string/current_preset"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvDelNameCurrentPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_toLeftOf="@+id/tvDelNameTotalLabel"
+        android:layout_toRightOf="@+id/tvDelNamePresetLabel"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="None"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvDelNameTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_toLeftOf="@+id/tvDelNameTotalPlayers"
+        android:text="@string/totalPlayers"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvDelNameTotalPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_marginRight="5dp"
+        android:text="0"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_delete_buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDelNameCurrentPreset"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_checkBoxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_delete_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_above="@+id/avDelNameAd"
+		android:layout_marginBottom="@dimen/rtg_button_margin_bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/bSelectAll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.74"
+            android:background="@drawable/custombutton"
+            android:text="Select All"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/rtg_button_text_size"
+            />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/bDelete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.74"
+            android:background="@drawable/custombutton"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/rtg_button_text_size"/>
+    </LinearLayout>
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/avDelNameAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-5656796193616969/7543353934" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/deletename.xml -->

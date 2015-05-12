@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Random Team Gen</string>
+
+    <string name="delete_name">Delete Name</string>
+    <string name="randomize">Randomize</string>
+    <string name="preset_options">Preset Options</string>
+
+    <string name="current_preset">Preset:\u0020</string>
+    <string name="current_preset2">Current Preset:\u0020</string>
+	<string name="player_list"><u>List of Players</u></string>
+	<string name="total_players">Total Players:\u0020</string>
+	<string name="no_saved_presets">There are no saved presets.</string>
+    <string name="number_of_teams"># of Teams…</string>
+    <string name="enter_preset_name_hint">Enter Preset Name… 1–26 char</string>
+    <string name="enter_name_hint">Enter Name… 1–26 char</string>
+    <string name="none">None</string>
+    <string name="empty">Empty</string>
+
+	<string name="del_name_header"><b>Delete Name</b></string>
+	<string name="del_preset_header"><b>Delete Preset</b></string>
+	<string name="load_preset_header"><b>Load/View Preset</b></string>
+	<string name="view_preset_header"><b>View Preset</b></string>
+	<string name="randomize_header"><b>Randomize</b></string>
+
+    <string name="select_all">Select All</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="load_preset">Load Preset</string>
+    <string name="cancel">Cancel</string>
+    <string name="go">Go</string>
+    <string name="save">Save</string>
+    <string name="randomize_again">Randomize Again</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="admob_unit_id">YOUR_AD_MOB_UNIT_ID</string>
+
+</resources>

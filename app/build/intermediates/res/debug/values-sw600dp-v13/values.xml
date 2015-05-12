@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="rtg_button_text_size">22sp</dimen>
+    <dimen name="rtg_header_text_size">25sp</dimen>
+    <dimen name="rtg_text_size">20sp</dimen>
+</resources>

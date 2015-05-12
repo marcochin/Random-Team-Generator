@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rtg_text_size">14sp</dimen>
+    <dimen name="rtg_header_text_size">23sp</dimen>
+    <dimen name="rtg_button_text_size">16sp</dimen>
+    <dimen name="rtg_button_margin_bottom">24sp</dimen>
+
+</resources>

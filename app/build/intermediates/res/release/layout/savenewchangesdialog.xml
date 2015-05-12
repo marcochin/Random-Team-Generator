@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvSNCSaveNewChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp"
+        android:text=""
+        android:textColor="#33B5E5"
+        android:textSize="22sp" />
+
+    <View
+        android:id="@+id/vBlueDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvSNCSaveNewChanges"
+        android:background="#33B5E5" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vBlueDivider"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bSNCnosave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            android:textSize="@dimen/rtg_text_size"/>
+
+        <Button
+            android:id="@+id/bSNCyessave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes"
+            android:textSize="@dimen/rtg_text_size"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/savenewchangesdialog.xml -->

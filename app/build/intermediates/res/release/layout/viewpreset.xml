@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvViewPresetHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/ViewPresetHeader"
+        android:textSize="@dimen/rtg_header_text_size" />
+
+    <TextView
+        android:id="@+id/tvViewPresetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvViewPresetHeader"
+        android:layout_marginLeft="5dp"
+        android:text="Preset: "
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvViewedPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvViewPresetHeader"
+        android:layout_toLeftOf="@+id/tvViewTotalLabel"
+        android:layout_toRightOf="@+id/tvViewPresetLabel"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvViewTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvViewPresetHeader"
+        android:layout_toLeftOf="@+id/tvViewTotalPlayers"
+        android:text="@string/totalPlayers"
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <TextView
+        android:id="@+id/tvViewTotalPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvViewPresetHeader"
+        android:layout_marginRight="5dp"
+        android:text=""
+        android:textSize="@dimen/rtg_text_size"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/llViewPresetButtons"
+        android:layout_below="@+id/tvViewPresetLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playerList"
+            android:textSize="@dimen/rtg_text_size"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/llViewPreset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llViewPresetButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avViewAd"
+        android:layout_marginBottom="@dimen/rtg_button_margin_bottom"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.68" />
+
+        <Button
+            android:id="@+id/bViewPresetLoad"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.74"
+            android:background="@drawable/custombutton"
+            android:text="Load Preset"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/rtg_button_text_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.68" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/avViewAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-5656796193616969/7543353934" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Marco/AndroidStudioProjects/TeamRandomizer/app/src/main/res/layout/viewpreset.xml -->
