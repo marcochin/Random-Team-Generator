@@ -6,4 +6,5 @@ If you want to activate ads go to the `strings.xml` and modify the `admob_unit_i
 
 `<string name="admob_unit_id">YOUR_AD_MOB_UNIT_ID</string>`
 
+This app for designed for Android 4.0+.
 
