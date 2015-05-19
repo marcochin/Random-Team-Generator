@@ -21,6 +21,11 @@ If you want to activate ads go to the `strings.xml` and modify the `admob_unit_i
 
 `<string name="admob_unit_id">YOUR_AD_MOB_UNIT_ID</string>`
 
+---
+
+###Credits
+
+Character names belong to Game Of Thrones, George R.R. Martin, and their appropriate owners. 
 
 This app for designed for Android 4.0+.
 
