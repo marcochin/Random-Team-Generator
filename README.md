@@ -6,6 +6,13 @@
 ###Description
 A quick little tool for games, parties, and other social gatherings for people who want to randomize their teams quickly and efficiently. Simple as that!
 
+<ul>
+<li>Allows users to save, open, update, and delete list presets using the persistence of the <code>SQLite</code> database.</li>
+<li>This app incorporates the use of Google Play Services Library Admob for displaying unobtrusive ads.</li>
+<li>Uses a <code>Floating Action Button</code> for the most common action, which is adding a name to the list to be randomized.</li>
+<li>Has the ability to randomize in to any number of teams given that the number of teams are <= the number of people.</li> 
+</ul>
+
 ---
 
 ###Preview
